@@ -1,12 +1,15 @@
-pluginManagement {
+buildscript {
     repositories {
-        gradlePluginPortal()
         google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:7.4.2'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.7.20"
     }
 }
 
-dependencyResolutionManagement {
-    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+allprojects {
     repositories {
         google()
         mavenCentral()
@@ -14,8 +17,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name='PojavLauncher'
-include ':app_pojavlauncher'
-
-include ':forge_installer'
-include ':glfw:android-gradle'
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
