@@ -1,15 +1,13 @@
-buildscript {
+
+pluginManagement {
     repositories {
+        gradlePluginPortal()
         google()
-        mavenCentral()
-    }
-    dependencies {
-        classpath 'com.android.tools.build:gradle:7.4.2'
-        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.7.20"
     }
 }
 
-allprojects {
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
     repositories {
         google()
         mavenCentral()
@@ -17,6 +15,7 @@ allprojects {
     }
 }
 
-task clean(type: Delete) {
-    delete rootProject.buildDir
-}
+rootProject.name = 'Orion Launcher'
+include ':app_pojavlauncher'
+include ':forge_installer'
+include ':glfw:android-gradle'
