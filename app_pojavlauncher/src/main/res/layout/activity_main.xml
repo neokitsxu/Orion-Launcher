@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- App Header -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Orion Launcher"
+            android:textSize="32sp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="30dp" />
+
+        <!-- Subtitle -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Your Ultimate Minecraft Launcher"
+            android:textSize="16sp"
+            android:textColor="#B0B0B0"
+            android:gravity="center"
+            android:layout_marginBottom="30dp" />
+
+        <!-- Mods Installer Button -->
+        <Button
+            android:id="@+id/btn_mods"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="📦 Mods Installer"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/button_premium"
+            android:layout_marginBottom="12dp" />
+
+        <!-- World Installer Button -->
+        <Button
+            android:id="@+id/btn_worlds"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="🌍 World Installer"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/button_premium"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Texture Pack Installer Button -->
+        <Button
+            android:id="@+id/btn_texturepacks"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="🎨 Texture Pack Installer"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/button_premium"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Play Button (Main Minecraft Launch) -->
+        <Button
+            android:id="@+id/btn_play"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:text="▶️ PLAY MINECRAFT"
+            android:textSize="22sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#4CAF50"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="12dp" />
+
+    </LinearLayout>
+</ScrollView>
